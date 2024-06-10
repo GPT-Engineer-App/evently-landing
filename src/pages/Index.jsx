@@ -1,4 +1,5 @@
 import { Container, VStack, Heading, Text, Button, Box, Image, HStack } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FaCalendarAlt, FaUsers, FaChartLine } from "react-icons/fa";
 
 const Index = () => {
@@ -49,8 +50,8 @@ const Index = () => {
         </HStack>
 
         <Box textAlign="center" mt={10}>
-          <Button colorScheme="blue" size="lg">
-            Get Started
+          <Button as={Link} to="/events" colorScheme="blue" size="lg">
+            View Events
           </Button>
         </Box>
       </VStack>
